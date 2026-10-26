@@ -3,8 +3,34 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Amanpreet Bajwa - Senior Environment and Foliage Artist</title>
-<meta name="description" content="Senior Biome and Foliage Artist - GTA 6, Forza Horizon 4, Off the Grid. Freelance hire, mentorship, tutorials."/>
+<title>Game Art Mentorship and Portfolio Review | Amanpreet Bajwa, AAA Environment Artist</title>
+<meta name="description" content="Environment artist portfolio review and 1-on-1 game art mentorship from an AAA artist (GTA 6, Forza Horizon 4). Start with a free portfolio readiness check."/>
+<link rel="canonical" href="https://7bajwa.github.io/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://7bajwa.github.io/"/>
+<meta property="og:title" content="Game Art Mentorship and Portfolio Review | Amanpreet Bajwa"/>
+<meta property="og:description" content="Honest portfolio review and 1-on-1 mentorship for aspiring environment artists, from an AAA artist. Start with a free portfolio readiness check."/>
+<meta property="og:image" content="https://cdnb.artstation.com/p/assets/images/images/087/491/755/large/amanpreet-bajwa-amanpreet-bajwa-castleruins-longshot-02.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Game Art Mentorship and Portfolio Review | Amanpreet Bajwa"/>
+<meta name="twitter:description" content="Honest portfolio review and 1-on-1 mentorship for aspiring environment artists, from an AAA artist. Start with a free portfolio readiness check."/>
+<meta name="twitter:image" content="https://cdnb.artstation.com/p/assets/images/images/087/491/755/large/amanpreet-bajwa-amanpreet-bajwa-castleruins-longshot-02.jpg"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Organization","@id":"https://7bajwa.github.io/#academy","name":"Future/Past Academy","url":"https://7bajwa.github.io/","founder":{"@id":"https://7bajwa.github.io/#amanpreet"},"sameAs":["https://topmate.io/fpa"]},
+    {"@type":"Person","@id":"https://7bajwa.github.io/#amanpreet","name":"Amanpreet Bajwa","jobTitle":"Senior Environment and Foliage Artist","image":"https://avatars.githubusercontent.com/u/18440150?s=400&u=70fff715f880ed2400c76feab4a63ad4d5c0ebc1&v=4","sameAs":["https://www.artstation.com/bajwa","https://www.linkedin.com/in/7bajwa/","https://github.com/7bajwa","https://www.youtube.com/@7bajwa","https://www.patreon.com/7bajwa"]},
+    {"@type":"Service","name":"Game Art Mentorship and Portfolio Review","serviceType":"Game environment art mentorship","provider":{"@id":"https://7bajwa.github.io/#academy"},"audience":{"@type":"Audience","audienceType":"Aspiring game environment artists"},"areaServed":"Worldwide","url":"https://7bajwa.github.io/#pricing",
+     "offers":[
+       {"@type":"Offer","name":"Portfolio readiness assessment","price":"0","priceCurrency":"USD"},
+       {"@type":"Offer","name":"Portfolio readiness report","priceSpecification":{"@type":"PriceSpecification","minPrice":"9","maxPrice":"19","priceCurrency":"USD"}},
+       {"@type":"Offer","name":"Expert portfolio review","priceSpecification":{"@type":"PriceSpecification","minPrice":"25","maxPrice":"30","priceCurrency":"USD"}},
+       {"@type":"Offer","name":"1-on-1 mentorship","priceSpecification":{"@type":"PriceSpecification","minPrice":"99","maxPrice":"599","priceCurrency":"USD"}}
+     ]}
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
@@ -242,8 +268,49 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3.5rem 5
 .reveal.visible{opacity:1;transform:translateY(0)}
 .rd1{transition-delay:.08s}.rd2{transition-delay:.18s}.rd3{transition-delay:.28s}
 
+/* HERO additions: audience line, free-check link, trust line */
+.hero-audience{font-family:'Montserrat',sans-serif;font-size:clamp(.9rem,1.6vw,1.1rem);font-weight:400;color:var(--text-hi);max-width:640px;margin-bottom:1rem;opacity:0;animation:fadeUp .9s .6s forwards}
+.hero-free{display:inline-block;margin-top:1.1rem;font-family:'Montserrat',sans-serif;font-size:.8rem;font-weight:500;color:var(--gold2);text-decoration:underline;text-underline-offset:.25em;opacity:0;animation:fadeUp .9s 1.05s forwards}
+.hero-trust{margin-top:.6rem;font-family:'Montserrat',sans-serif;font-size:.7rem;color:var(--text-dim);opacity:0;animation:fadeUp .9s 1.1s forwards}
+a.hstat,a.mstat{text-decoration:none;transition:background .25s}
+a.hstat:hover,a.mstat:hover{background:var(--bg3)}
+.proof-note{font-family:'Montserrat',sans-serif;font-size:.62rem;color:var(--text-dim);margin-top:.8rem;text-align:center}
+.proof-note a{color:var(--gold)}
+
+/* FREE CHECK */
+.free-check{border:1px solid var(--border2);background:var(--bg);padding:2.4rem;margin-bottom:4rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
+.free-check h3{font-family:'Libre Baskerville',serif;font-size:1.5rem;font-weight:400;color:var(--text-hi);margin-bottom:.6rem}
+.free-check p{font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--text-dim);line-height:1.85}
+
+/* PRICING */
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.price-card{background:var(--bg);padding:2.6rem 2rem;display:flex;flex-direction:column;position:relative}
+.price-badge{position:absolute;top:1rem;right:1rem;font-family:'Montserrat',sans-serif;font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;padding:.25rem .6rem;background:var(--gold);color:#000;font-weight:600}
+.price-stage{font-family:'Montserrat',sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.price-amount{font-family:'Libre Baskerville',serif;font-size:2.4rem;color:var(--text-hi);line-height:1;margin-bottom:.4rem}
+.price-name{font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:600;color:var(--text-hi);margin-bottom:.9rem}
+.price-card p{font-family:'Montserrat',sans-serif;font-size:.85rem;color:var(--text-dim);line-height:1.8;margin-bottom:1.6rem;flex-grow:1}
+.price-card .btn-gold,.price-card .btn-outline{justify-content:center}
+.pricing-notes{margin-top:1.6rem;font-family:'Montserrat',sans-serif;font-size:.8rem;color:var(--text-dim);line-height:1.9}
+.pricing-notes strong{color:var(--text);font-weight:600}
+
+/* EVIDENCE STRIP */
+.evidence{margin-top:1.3rem;font-family:'Montserrat',sans-serif;font-size:.72rem;line-height:1.9;color:var(--text-dim)}
+.evidence strong{color:var(--gold);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.6rem}
+.evidence a{color:var(--gold2)}
+
+/* FAQ */
+.faq{max-width:900px;margin-top:5rem}
+.faq details{border-bottom:1px solid var(--border)}
+.faq summary{cursor:pointer;list-style:none;padding:1.2rem 0;font-family:'Libre Baskerville',serif;font-size:1.1rem;color:var(--text-hi);display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';color:var(--gold)}
+.faq details[open] summary::after{content:'-'}
+.faq details p{font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--text-dim);line-height:1.9;padding-bottom:1.2rem}
+
 /* RESPONSIVE */
 @media(max-width:1200px){
+  .pricing-grid{grid-template-columns:1fr 1fr}
   .about-4col{grid-template-columns:1fr 1fr}
   .about-img-block{min-height:360px}
   .services-grid{grid-template-columns:1fr}
@@ -252,10 +319,28 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3.5rem 5
   .gallery-grid{grid-template-columns:repeat(3,1fr)}
   footer{grid-template-columns:1fr;text-align:center}
   .footer-id{justify-content:center}
-  .footer-links{justify-content:center}
+  .footer-links{justify-content:center;flex-wrap:wrap}
+}
+@media(max-width:1280px){
+  nav{flex-wrap:wrap;padding:.6rem 4vw 0}
+  .nav-name{font-size:1.05rem}
+  .nav-cta{min-height:44px;display:flex;align-items:center;padding:0 1rem}
+  .nav-links{order:3;width:100%;gap:0;overflow-x:auto;justify-content:space-between;margin-top:.3rem}
+  .nav-links a{display:flex;align-items:center;min-height:44px;padding:0 .55rem;font-size:.66rem}
+  .hero{padding-top:10rem}
 }
 @media(max-width:768px){
-  .nav-links{display:none}
+  .nav-avatar{width:34px;height:34px}
+  .nav-name{font-size:.9rem}
+  .nav-cta{padding:0 .7rem;font-size:.66rem}
+  .hero{padding-top:8rem;padding-bottom:0}
+  .hero-avatar,.hero-tags{display:none}
+  .hero-stats-bar{position:relative;align-self:stretch;margin:3rem -6vw 0}
+  .hero-ctas{flex-direction:column;width:100%}
+  .hero-ctas a{justify-content:center;min-height:48px}
+  .free-check{grid-template-columns:1fr;padding:1.8rem}
+  .pricing-grid{grid-template-columns:1fr}
+  .tcard{width:300px;padding:1.8rem}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .hero-stats-bar{grid-template-columns:repeat(2,1fr)}
   .about-4col{grid-template-columns:1fr}
@@ -273,10 +358,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3.5rem 5
     <span class="nav-name">Amanpreet Bajwa</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#services">Services</a></li>
     <li><a href="#academy">Academy</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a class="nav-cta" href="https://topmate.io/fpa" target="_blank" rel="noopener">Book Session</a>
@@ -297,10 +384,11 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3.5rem 5
 
   <div class="hero-content">
     <img class="hero-avatar" src="https://avatars.githubusercontent.com/u/18440150?s=400&u=70fff715f880ed2400c76feab4a63ad4d5c0ebc1&v=4" alt="Amanpreet Bajwa"/>
-    <p class="hero-eyebrow">Senior Foliage and Environment Artist &nbsp;·&nbsp; 10+ Years AAA</p>
+    <p class="hero-eyebrow">Game Art Mentorship with an AAA Environment Artist</p>
     <h1 class="hero-title">Amanpreet Bajwa</h1>
-    <p class="hero-roles">Biome and Foliage Creation <span class="sep">|</span> Blender <span class="sep">|</span> SpeedTree <span class="sep">|</span> Unreal Engine 5 <span class="sep">|</span> Mentorship</p>
-    <p class="hero-sub">Rockstar Games <span class="sep">·</span> Gunzilla <span class="sep">·</span> Hangar 13 <span class="sep">·</span> Romero Games <span class="sep">·</span> Dhruva</p>
+    <p class="hero-audience">For aspiring environment artists who want a pro to point out what their portfolio is missing, and a clear roadmap of what to work on next. No sugar-coating, no gatekeeping.</p>
+    <p class="hero-roles">Portfolio Review <span class="sep">|</span> Career Roadmap <span class="sep">|</span> Environment and Foliage Art <span class="sep">|</span> UE5 and Blender</p>
+    <p class="hero-sub">10+ years AAA at Rockstar Games <span class="sep">·</span> Gunzilla <span class="sep">·</span> Hangar 13 <span class="sep">·</span> Romero Games <span class="sep">·</span> Dhruva</p>
     <div class="hero-tags">
       <span class="hero-tag">GTA 6</span>
       <span class="hero-tag">Off the Grid</span>
@@ -310,171 +398,62 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3.5rem 5
       <span class="hero-tag">Epic UE5 Demo</span>
     </div>
     <div class="hero-ctas">
+      <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-gold">Book Mentorship</a>
       <a href="https://www.artstation.com/bajwa" target="_blank" rel="noopener" class="btn-cta">View Portfolio</a>
-      <a href="mailto:amanpreetbajwa7@gmail.com" class="btn-cta">Hire Me</a>
-      <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-cta">Book Mentorship</a>
     </div>
+    <a href="#free-check" class="hero-free">Not ready to pay? Get a free portfolio readiness check</a>
+    <p class="hero-trust">First session covered by a money-back guarantee if it is not useful. Pay securely through Topmate.</p>
   </div>
 
   <div class="hero-stats-bar">
     <div class="hstat"><div class="hstat-num">10+</div><div class="hstat-label">Years Experience</div></div>
     <div class="hstat"><div class="hstat-num">15+</div><div class="hstat-label">AAA Titles Shipped</div></div>
-    <div class="hstat"><div class="hstat-num">100+</div><div class="hstat-label">Artists Mentored</div></div>
-    <div class="hstat"><div class="hstat-num">0.1%</div><div class="hstat-label">Top Topmate Rank</div></div>
+    <a class="hstat" href="https://topmate.io/fpa" target="_blank" rel="noopener"><div class="hstat-num">798</div><div class="hstat-label">Bookings on Topmate</div></a>
+    <a class="hstat" href="https://topmate.io/fpa" target="_blank" rel="noopener"><div class="hstat-num">4.9</div><div class="hstat-label">From 53 Topmate Ratings</div></a>
   </div>
 </section>
 
-<!-- CLIENTS MARQUEE -->
-<div class="clients-section">
-  <div class="clients-header">
-    <div class="clients-title">Games and Studios &nbsp;·&nbsp; 10+ Years of AAA Production</div>
-    <div class="clients-subtitle">Click any title to watch the trailer</div>
-  </div>
-  <div class="marquee-wrap">
-    <div class="marquee-track" id="clientTrack">
-      <div class="client-card" data-yt="https://www.youtube.com/embed/QdBZExpgErs" data-title="Grand Theft Auto VI - Reveal Trailer"><span class="client-play">+</span><div class="client-game">Grand Theft Auto VI</div><div class="client-studio">Rockstar Games</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/XYmhjpNaFBY" data-title="Off the Grid - Gameplay Trailer"><span class="client-play">+</span><div class="client-game">Off the Grid</div><div class="client-studio">Gunzilla Games</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/3QJIkpV9Qgs" data-title="Mafia: Definitive Edition - Trailer"><span class="client-play">+</span><div class="client-game">Mafia: Definitive Edition</div><div class="client-studio">Hangar 13 / 2K Games</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/AJNNwQn4KyU" data-title="Forza Horizon 4 - Official Trailer"><span class="client-play">+</span><div class="client-game">Forza Horizon 4</div><div class="client-studio">Dhruva Interactive</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/4MnoB2BUHKM" data-title="Overkill's The Walking Dead - Trailer"><span class="client-play">+</span><div class="client-game">The Walking Dead</div><div class="client-studio">Dhruva Interactive</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/2nYRDSMBiro" data-title="Hunting Simulator 2 - Trailer"><span class="client-play">+</span><div class="client-game">Hunting Simulator 2</div><div class="client-studio">Dhruva Interactive</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/mMGMIBpseaA" data-title="Godfall - Official Reveal"><span class="client-play">+</span><div class="client-game">Godfall</div><div class="client-studio">Dekogon</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/qC5KtatMcUw" data-title="Unreal Engine 5 - Official Demo"><span class="client-play">+</span><div class="client-game">UE5 Epic Games Demo</div><div class="client-studio">Epic Games Showcase</div></div>
-      <div class="client-card" data-yt="" data-title="Crossfire Co-Op"><span class="client-play">+</span><div class="client-game">Crossfire Co-Op</div><div class="client-studio">Dhruva Interactive</div></div>
-      <div class="client-card" data-yt="" data-title="Romero Games Project (NDA)"><span class="client-play">+</span><div class="client-game">Romero Games (NDA)</div><div class="client-studio">Romero Games Ltd.</div></div>
-      <div class="client-card" data-yt="" data-title="NVIDIA Real-Time Vegetation Simulator"><span class="client-play">+</span><div class="client-game">NVIDIA Simulator</div><div class="client-studio">NVIDIA</div></div>
-      <!-- duplicate -->
-      <div class="client-card" data-yt="https://www.youtube.com/embed/QdBZExpgErs" data-title="Grand Theft Auto VI - Reveal Trailer"><span class="client-play">+</span><div class="client-game">Grand Theft Auto VI</div><div class="client-studio">Rockstar Games</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/XYmhjpNaFBY" data-title="Off the Grid - Gameplay Trailer"><span class="client-play">+</span><div class="client-game">Off the Grid</div><div class="client-studio">Gunzilla Games</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/3QJIkpV9Qgs" data-title="Mafia: Definitive Edition - Trailer"><span class="client-play">+</span><div class="client-game">Mafia: Definitive Edition</div><div class="client-studio">Hangar 13 / 2K Games</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/AJNNwQn4KyU" data-title="Forza Horizon 4 - Official Trailer"><span class="client-play">+</span><div class="client-game">Forza Horizon 4</div><div class="client-studio">Dhruva Interactive</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/4MnoB2BUHKM" data-title="Overkill's The Walking Dead - Trailer"><span class="client-play">+</span><div class="client-game">The Walking Dead</div><div class="client-studio">Dhruva Interactive</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/2nYRDSMBiro" data-title="Hunting Simulator 2 - Trailer"><span class="client-play">+</span><div class="client-game">Hunting Simulator 2</div><div class="client-studio">Dhruva Interactive</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/mMGMIBpseaA" data-title="Godfall - Official Reveal"><span class="client-play">+</span><div class="client-game">Godfall</div><div class="client-studio">Dekogon</div></div>
-      <div class="client-card" data-yt="https://www.youtube.com/embed/qC5KtatMcUw" data-title="Unreal Engine 5 - Official Demo"><span class="client-play">+</span><div class="client-game">UE5 Epic Games Demo</div><div class="client-studio">Epic Games Showcase</div></div>
-      <div class="client-card" data-yt="" data-title="Crossfire Co-Op"><span class="client-play">+</span><div class="client-game">Crossfire Co-Op</div><div class="client-studio">Dhruva Interactive</div></div>
-      <div class="client-card" data-yt="" data-title="Romero Games Project (NDA)"><span class="client-play">+</span><div class="client-game">Romero Games (NDA)</div><div class="client-studio">Romero Games Ltd.</div></div>
-      <div class="client-card" data-yt="" data-title="NVIDIA Real-Time Vegetation Simulator"><span class="client-play">+</span><div class="client-game">NVIDIA Simulator</div><div class="client-studio">NVIDIA</div></div>
-    </div>
-  </div>
-</div>
-
-<!-- Trailer Popup -->
-<div class="trailer-overlay" id="trailerOverlay">
-  <div class="trailer-box">
-    <button class="trailer-close" id="trailerClose">X  Close</button>
-    <iframe id="trailerFrame" src="" allowfullscreen allow="autoplay"></iframe>
-    <div class="trailer-title" id="trailerTitle"></div>
-  </div>
-</div>
-
-<!-- ABOUT - 4 columns -->
+<!-- ACADEMY -->
 <hr class="div"/>
-<section id="about">
-  <div class="about-4col">
-
-    <!-- Block 1: Big stacked title, nudged right -->
-    <div class="about-block-title reveal">
-      <div class="about-big-title">
-        <span class="w-white">Senior</span>
-        <span class="w-white">Artist.</span>
-        <span class="w-white">Mentor.</span>
-        <span class="w-gold">Storyteller.</span>
-        <span class="w-white">Chronic</span>
-        <span class="w-white">Learner.</span>
-        <span class="w-white">Supporter.</span>
+<section id="academy" class="mentor-section">
+  <div class="section-inner">
+    <div class="mentor-top">
+      <div class="reveal">
+        <p class="s-label">Future/Past Academy</p>
+        <h2 class="s-title">Know exactly what to<br/><em>work on next.</em></h2>
+        <div class="mentor-text">
+          <p>Tutorials, school assignments and personal projects only get you so far. At some point you need someone who has worked inside AAA studios to look at your portfolio and tell you what is missing.</p>
+          <p>Future/Past Academy is where I pour everything from 10+ years of AAA production into helping the next generation of 3D artists. <strong>Honestly and practically.</strong> No sugar-coating, no gatekeeping.</p>
+          <p>I have been a <strong>keynote speaker at BCon 2023, 2024, and 2025</strong> presenting Blender in game environment art, and a guest lecturer at university level. The academy is ranked in the <strong>top 0.1% globally on Topmate.</strong></p>
+        </div>
+        <div style="margin-top:1.8rem;display:flex;gap:.9rem;flex-wrap:wrap">
+          <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-gold">Book a Session Now</a>
+          <a href="https://www.patreon.com/7bajwa" target="_blank" rel="noopener" class="btn-outline">Support on Patreon</a>
+        </div>
+      </div>
+      <div class="reveal rd1">
+        <div class="mentor-stats-grid">
+          <a class="mstat" href="https://topmate.io/fpa" target="_blank" rel="noopener"><div class="mstat-num">798</div><div class="mstat-lbl">Bookings on Future/Past Academy</div></a>
+          <!-- TODO: link the personal Topmate profile (URL not in repo) -->
+          <div class="mstat"><div class="mstat-num">121</div><div class="mstat-lbl">Bookings on personal Topmate</div></div>
+          <a class="mstat" href="https://topmate.io/fpa" target="_blank" rel="noopener"><div class="mstat-num">4.9</div><div class="mstat-lbl">From 53 Topmate ratings</div></a>
+          <a class="mstat" href="https://topmate.io/fpa" target="_blank" rel="noopener"><div class="mstat-num">0.1%</div><div class="mstat-lbl">Topmate Ranking</div></a>
+        </div>
+        <!-- TODO: add a dated screenshot of both live Topmate profiles here -->
+        <p class="proof-note">Figures from the public <a href="https://topmate.io/fpa" target="_blank" rel="noopener">Topmate profile</a>, October 2026.</p>
       </div>
     </div>
 
-    <!-- Block 2: Bio text, nudged left -->
-    <div class="about-block-bio reveal rd1">
-      <p class="s-label">About</p>
-      <div class="about-body">
-        <p>I am a <strong>Senior Biome and Foliage Artist</strong> with 10+ years building photorealistic environments for the industry's biggest titles. Rockstar Games on <strong>GTA 6</strong>, Gunzilla's <strong>Off the Grid</strong>, Hangar 13's <strong>Mafia</strong>, and <strong>Forza Horizon 4</strong>.</p>
-        <p>I specialise in making environments feel alive. Foliage systems, biome pipelines, vegetation at scale. I also build the tools and scripts that make production sustainable.</p>
-        <p>I run <strong>Future/Past Academy</strong>, have spoken at BCon 2023 to 2025 as keynote, and lectured at university level on foliage art and game pipelines.</p>
-        <p>I also write poetry, collect coins from 50+ countries, and cook anything I can get my hands on.</p>
+    <div class="free-check reveal" id="free-check">
+      <div>
+        <p class="s-label">Free · Stage 1</p>
+        <h3>Free portfolio readiness check</h3>
+        <p>Not sure if your portfolio is ready for studio applications? Send me your ArtStation or portfolio link. I will tell you honestly whether it is ready, and the first thing to fix if it is not. No payment, no card.</p>
       </div>
-      <div class="about-badges">
-        <a href="https://www.linkedin.com/in/7bajwa/" target="_blank" class="about-badge-pill">LinkedIn</a>
-        <a href="https://github.com/7bajwa" target="_blank" class="about-badge-pill">GitHub</a>
-        <a href="https://www.youtube.com/@7bajwa" target="_blank" class="about-badge-pill">YouTube</a>
-      </div>
+      <a href="mailto:amanpreetbajwa7@gmail.com?subject=Free%20portfolio%20readiness%20check&amp;body=Portfolio%20link%3A%20%0AWhat%20role%20I%20am%20aiming%20for%3A%20" class="btn-gold">Get a free portfolio readiness check</a>
     </div>
-
-    <!-- Block 3: Render slideshow, nudged left -->
-    <div class="about-img-block reveal rd2" id="aboutImgBlock">
-      <div class="about-img-slide active" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/087/491/755/large/amanpreet-bajwa-amanpreet-bajwa-castleruins-longshot-02.jpg')"></div>
-      <div class="about-img-slide" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/058/370/425/large/amanpreet-bajwa-ancient-one-11.jpg')"></div>
-      <div class="about-img-slide" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/014/458/085/large/amanpreet-bajwa-feudal-japan-day.jpg')"></div>
-      <div class="about-img-slide" style="background-image:url('https://cdna.artstation.com/p/assets/images/images/096/665/928/large/amanpreet-bajwa-amanpreet-bajwa-m-toc-day-10.webp')"></div>
-      <div class="about-img-slide" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/015/530/359/large/amanpreet-bajwa-north-kingdom-02.jpg')"></div>
-    </div>
-
-    <!-- Block 4: Skills -->
-    <div class="about-block-skills reveal rd3">
-      <p class="s-label">Skills</p>
-      <div class="skill-group">
-        <div class="skill-group-title">3D Art</div>
-        <div class="skill-chip-row"><span class="skill-chip">Blender</span><span class="skill-chip">SpeedTree</span><span class="skill-chip">PlantFactory</span><span class="skill-chip">ZBrush</span><span class="skill-chip">3DS Max</span><span class="skill-chip">Maya</span></div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Engine and Real-Time</div>
-        <div class="skill-chip-row"><span class="skill-chip">Unreal Engine 5</span><span class="skill-chip">Nanite</span><span class="skill-chip">Lumen</span><span class="skill-chip">PCG Framework</span><span class="skill-chip">ISM / HISM</span></div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Texturing and Shaders</div>
-        <div class="skill-chip-row"><span class="skill-chip">Substance Painter</span><span class="skill-chip">Substance Designer</span><span class="skill-chip">PBR</span><span class="skill-chip">Trim Sheets</span><span class="skill-chip">WPO</span><span class="skill-chip">SSS</span></div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Terrain and Procedural</div>
-        <div class="skill-chip-row"><span class="skill-chip">World Machine</span><span class="skill-chip">Gaea</span><span class="skill-chip">Houdini</span><span class="skill-chip">Geometry Nodes</span><span class="skill-chip">Photogrammetry</span></div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Pipeline and Scripting</div>
-        <div class="skill-chip-row"><span class="skill-chip">Python</span><span class="skill-chip">C++</span><span class="skill-chip">Blueprint</span><span class="skill-chip">LOD Strategy</span><span class="skill-chip">Optimisation</span></div>
-      </div>
-    </div>
-
   </div>
 </section>
-
-<!-- GALLERY -->
-<hr class="div"/>
-<section id="work" style="background:var(--bg2)">
-  <div style="padding:4.5rem 5vw 2.2rem" class="reveal">
-    <p class="s-label">Selected Works</p>
-    <h2 class="s-title">Portfolio <em>Highlights</em></h2>
-  </div>
-  <div class="gallery-grid" id="galleryGrid">
-    <div class="gallery-item reveal"><img src="https://cdnb.artstation.com/p/assets/images/images/087/491/755/large/amanpreet-bajwa-amanpreet-bajwa-castleruins-longshot-02.jpg" alt="Castle Ruins" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Castle Ruins</span></div></div>
-    <div class="gallery-item reveal rd1"><img src="https://cdnb.artstation.com/p/assets/images/images/078/613/609/large/amanpreet-bajwa-tomb-03.jpg" alt="Tomb" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Tomb Environment</span></div></div>
-    <div class="gallery-item reveal rd2"><img src="https://cdnb.artstation.com/p/assets/images/images/095/233/973/large/amanpreet-bajwa-mth-02.webp" alt="Mountain" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Mountain Biome</span></div></div>
-    <div class="gallery-item reveal rd3"><img src="https://cdna.artstation.com/p/assets/images/images/096/665/928/large/amanpreet-bajwa-amanpreet-bajwa-m-toc-day-10.webp" alt="Overcast" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Overcast Scene</span></div></div>
-    <div class="gallery-item reveal"><img src="https://cdnb.artstation.com/p/assets/images/images/058/370/425/large/amanpreet-bajwa-ancient-one-11.jpg" alt="Ancient One" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Ancient One - UE5</span></div></div>
-    <div class="gallery-item reveal rd1"><img src="https://cdnb.artstation.com/p/assets/images/images/015/530/359/large/amanpreet-bajwa-north-kingdom-02.jpg" alt="North Kingdom" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">North Kingdom</span></div></div>
-    <div class="gallery-item reveal rd2"><img src="https://cdnb.artstation.com/p/assets/images/images/014/458/085/large/amanpreet-bajwa-feudal-japan-day.jpg" alt="Feudal Japan Day" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Feudal Japan - Day</span></div></div>
-    <div class="gallery-item reveal rd3"><img src="https://cdna.artstation.com/p/assets/images/images/014/458/076/large/amanpreet-bajwa-feudal-japan-night.jpg" alt="Feudal Japan Night" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Feudal Japan - Night</span></div></div>
-    <div class="gallery-item reveal"><img src="https://cdnb.artstation.com/p/assets/images/images/032/864/983/large/amanpreet-bajwa-bigbang-08-01.jpg" alt="Big Bang" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Big Bang</span></div></div>
-    <div class="gallery-item reveal rd1"><img src="https://cdna.artstation.com/p/assets/images/images/054/587/670/large/amanpreet-bajwa-01.jpg" alt="Foliage" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Foliage Study</span></div></div>
-    <div class="gallery-item reveal rd2"><img src="https://cdna.artstation.com/p/assets/images/images/042/006/548/large/amanpreet-bajwa-amanpreet-bajwa-1.jpg" alt="Scene" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Environment Scene</span></div></div>
-    <div class="gallery-item reveal rd3"><img src="https://cdna.artstation.com/p/assets/images/images/021/109/986/large/amanpreet-bajwa-colorado-screen-10.jpg" alt="Colorado" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Colorado</span></div></div>
-    <div class="gallery-item reveal"><img src="https://cdna.artstation.com/p/assets/images/images/038/767/472/large/amanpreet-bajwa-fh4-h03.jpg" alt="FH4 Scene" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Forza Horizon 4 - Biome</span></div></div>
-    <div class="gallery-item reveal rd1"><img src="https://cdna.artstation.com/p/assets/images/images/038/767/284/large/amanpreet-bajwa-fh4-tree.jpg" alt="FH4 Tree" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Forza Horizon 4 - Tree</span></div></div>
-    <div class="gallery-item reveal rd2"><img src="https://cdnb.artstation.com/p/assets/images/images/021/109/741/large/amanpreet-bajwa-amanpreet-bajwa-environment-05.jpg" alt="Environment" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Environment Concept</span></div></div>
-  </div>
-  <div class="gallery-footer reveal">
-    <a href="https://www.artstation.com/bajwa" target="_blank" rel="noopener" class="btn-outline">See Full Portfolio on ArtStation</a>
-  </div>
-</section>
-
-<!-- lightbox -->
-<div class="lightbox" id="lightbox">
-  <button class="lb-close" id="lbClose">X  Close</button>
-  <button class="lb-prev" id="lbPrev">&#8249;</button>
-  <img src="" alt="" id="lbImg"/>
-  <button class="lb-next" id="lbNext">&#8250;</button>
-</div>
 
 <!-- SERVICES -->
 <hr class="div"/>
@@ -531,34 +510,60 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3.5rem 5
   </div>
 </section>
 
-<!-- ACADEMY / TESTIMONIALS -->
+<!-- PRICING -->
 <hr class="div"/>
-<section id="academy" class="mentor-section">
+<section id="pricing">
   <div class="section-inner">
-    <div class="mentor-top">
-      <div class="reveal">
-        <p class="s-label">Future/Past Academy</p>
-        <h2 class="s-title">Where artists become<br/><em>industry-ready.</em></h2>
-        <div class="mentor-text">
-          <p>Future/Past Academy is where I pour everything from 10+ years of AAA production into helping the next generation of 3D artists. <strong>Honestly and practically.</strong> No sugar-coating, no gatekeeping.</p>
-          <p>I have been a <strong>keynote speaker at BCon 2023, 2024, and 2025</strong> presenting Blender in game environment art, and a guest lecturer at university level. The academy is ranked in the <strong>top 0.1% globally on Topmate.</strong></p>
-        </div>
-        <div style="margin-top:1.8rem;display:flex;gap:.9rem;flex-wrap:wrap">
-          <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-gold">Book a Session Now</a>
-          <a href="https://www.patreon.com/7bajwa" target="_blank" rel="noopener" class="btn-outline">Support on Patreon</a>
-        </div>
+    <div style="margin-bottom:2.8rem" class="reveal">
+      <p class="s-label">Pricing</p>
+      <h2 class="s-title">Start free. Pay only for the <em>depth you need.</em></h2>
+    </div>
+    <!-- TODO: point each paid card at its own Topmate service URL -->
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <span class="price-badge">Start here</span>
+        <p class="price-stage">Stage 1</p>
+        <div class="price-amount">Free</div>
+        <h3 class="price-name">Portfolio readiness assessment</h3>
+        <p>A straight answer on whether your portfolio is ready for studio applications, and the first thing to fix.</p>
+        <a href="#free-check" class="btn-gold">Get the free check</a>
       </div>
-      <div class="reveal rd1">
-        <div class="mentor-stats-grid">
-          <div class="mstat"><div class="mstat-num">200+</div><div class="mstat-lbl">Sessions Delivered</div></div>
-          <div class="mstat"><div class="mstat-num">0.1%</div><div class="mstat-lbl">Topmate Ranking</div></div>
-          <div class="mstat"><div class="mstat-num">5.0</div><div class="mstat-lbl">Average Rating</div></div>
-          <div class="mstat"><div class="mstat-num">BCon</div><div class="mstat-lbl">Keynote 2023 to 2025</div></div>
-        </div>
+      <div class="price-card reveal rd1">
+        <p class="price-stage">Stage 2</p>
+        <div class="price-amount">$9-19</div>
+        <h3 class="price-name">Readiness report</h3>
+        <p>A written report on your portfolio: what is working, what is missing, and what studios will notice first.</p>
+        <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-outline">Book on Topmate</a>
+      </div>
+      <div class="price-card reveal rd2">
+        <p class="price-stage">Stage 3</p>
+        <div class="price-amount">$25-30</div>
+        <h3 class="price-name">Expert review</h3>
+        <p>An in-depth portfolio review from an AAA environment artist, with an actionable roadmap of what to work on next.</p>
+        <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-outline">Book on Topmate</a>
+      </div>
+      <div class="price-card reveal rd3">
+        <p class="price-stage">Stage 4</p>
+        <div class="price-amount">from $99</div>
+        <h3 class="price-name">1-on-1 mentorship</h3>
+        <p>Ongoing sessions up to $599: portfolio, career direction and job strategy, resume and LinkedIn, environment and foliage technique, UE5 and Blender workflow.</p>
+        <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-gold">Book Mentorship</a>
       </div>
     </div>
+    <div class="pricing-notes reveal">
+      <p>First session covered by a money-back guarantee if it is not useful. Pay securely through Topmate. Prices in USD.</p>
+      <p><strong>Who this is not for:</strong> studios looking to hire (see Freelance Environment Art above), or anyone looking for a job guarantee.</p>
+    </div>
+  </div>
+</section>
 
+<!-- TESTIMONIALS / FAQ -->
+<hr class="div"/>
+<section id="testimonials" class="mentor-section">
+  <div class="section-inner">
     <p class="s-label reveal" style="margin-bottom:1.4rem">What students and clients say</p>
+    <!-- TODO: add a photo and a role line (e.g. "Student environment artist, India") per card, and one before/after portfolio screenshot -->
+
     <div class="t-marquee-wrap">
       <div class="t-track" id="tTrack">
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"I must say it was an absolutely fantastic experience. His knowledge was not only extensive but also up-to-date with the latest industry trends. If you have the opportunity to work with Amanpreet, do not hesitate."</p><div class="tcard-footer"><div class="tcard-author">Ashish Soans</div><div class="tcard-date">June 2023</div></div></div>
@@ -569,20 +574,177 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3.5rem 5
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"Amanpreet is very knowledgeable and an experienced professional. Highly recommend all game dev artists who need advice or mentorship. You will be in good hands."</p><div class="tcard-footer"><div class="tcard-author">Aniket</div><div class="tcard-date">October 2025</div></div></div>
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"It was a pleasure speaking with you. Your insights addressed my questions thoroughly and provided the understanding I needed for my portfolio. Thank you for the motivation and encouragement."</p><div class="tcard-footer"><div class="tcard-author">Shreyam Roy</div><div class="tcard-date">March 2026</div></div></div>
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"Unlike YouTube tutorials it provides you with a structured path to learn. Amanpreet is keen to share his art and industry knowledge which helps us excel in our career."</p><div class="tcard-footer"><div class="tcard-author">Vikram</div><div class="tcard-date">August 2025</div></div></div>
-        <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"The portfolio review really gave me a lot of insights on presentation. It gave me a roadmap on what to focus on next. I am really grateful to FPA for the review."</p><div class="tcard-footer"><div class="tcard-author">Anonymous</div><div class="tcard-date">January 2025</div></div></div>
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"Really enjoyed the session. He has tremendous knowledge about game art and explains different topics very patiently."</p><div class="tcard-footer"><div class="tcard-author">Vishal Reddy</div><div class="tcard-date">June 2023</div></div></div>
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"There are some aspects of 3D I overlooked as an artist, and this call with Amanpreet helped me recognise how crucial they are to a strong portfolio."</p><div class="tcard-footer"><div class="tcard-author">Ashley Obote</div><div class="tcard-date">May 2025</div></div></div>
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"Very practical and insightful feedback for my resume and portfolio. The session was very informative and did not feel stiff or formal."</p><div class="tcard-footer"><div class="tcard-author">Enes Besinci</div><div class="tcard-date">October 2023</div></div></div>
-        <!-- duplicate set -->
-        <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"I must say it was an absolutely fantastic experience. His knowledge was not only extensive but also up-to-date with the latest industry trends. If you have the opportunity to work with Amanpreet, do not hesitate."</p><div class="tcard-footer"><div class="tcard-author">Ashish Soans</div><div class="tcard-date">June 2023</div></div></div>
-        <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"Was very helpful and insightful of what I should do to improve my skills as an environment artist and what direction I should go. Only gave me a hard truth of what it means to be an environment artist."</p><div class="tcard-footer"><div class="tcard-author">Akshay Dodia</div><div class="tcard-date">August 2023</div></div></div>
-        <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"Everything about the session and Amanpreet were absolutely wonderful! Not only was he charming and approachable, he was very insightful. We went over my resume, portfolio, LinkedIn, and even cover letters. I left feeling fulfilled and highly motivated."</p><div class="tcard-footer"><div class="tcard-author">Tyla Payano</div><div class="tcard-date">January 2024</div></div></div>
-        <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"My session was incredibly informative, motivational, and put me on the right path. Great tips on what is needed to improve and increase my chances to get hired."</p><div class="tcard-footer"><div class="tcard-author">Matthew Vroman</div><div class="tcard-date">March 2024</div></div></div>
-        <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"He is a very helpful and genuine person helping budding artists through his academy. Understanding their needs and keeping a mindset of teaching rather than looking to make money."</p><div class="tcard-footer"><div class="tcard-author">Erica Henderson</div><div class="tcard-date">May 2025</div></div></div>
-        <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"The portfolio review really gave me a lot of insights on presentation. It gave me a roadmap on what to focus on next. I am really grateful to FPA for the review."</p><div class="tcard-footer"><div class="tcard-author">Anonymous</div><div class="tcard-date">January 2025</div></div></div>
-        <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"Really enjoyed the session. He has tremendous knowledge about game art and explains different topics very patiently."</p><div class="tcard-footer"><div class="tcard-author">Vishal Reddy</div><div class="tcard-date">June 2023</div></div></div>
       </div>
     </div>
+
+    <div class="faq reveal" id="faq">
+      <p class="s-label">FAQ</p>
+      <h2 class="s-title">Questions artists <em>ask first.</em></h2>
+      <details>
+        <summary>Why not just watch YouTube tutorials?</summary>
+        <p>Tutorials teach a technique. They cannot look at your portfolio. I make tutorials too, on YouTube and Patreon, and they are great once you know what to learn. Mentorship tells you what your portfolio is missing and in what order to fix it. As Vikram put it after his session: "Unlike YouTube tutorials it provides you with a structured path to learn."</p>
+      </details>
+      <details>
+        <summary>What exactly do I get in one session?</summary>
+        <p>A 1-on-1 call focused on what you need: portfolio review and an actionable roadmap, career direction and job strategy, resume, LinkedIn and cover letter, environment and foliage technique, or UE5 and Blender workflow. You leave knowing what to work on next.</p>
+      </details>
+      <details>
+        <summary>How much does it cost?</summary>
+        <p>The portfolio readiness assessment is free. A written readiness report is $9-19, an expert review is $25-30, and 1-on-1 mentorship runs from $99 to $599. See <a href="#pricing" style="color:var(--gold2)">pricing</a>. All payments go through Topmate.</p>
+      </details>
+      <details>
+        <summary>Do you guarantee a job?</summary>
+        <p>No. Nobody can honestly promise that. What I can give you is a hard, honest look at your work against what studios actually look for, and a clear plan to close the gap.</p>
+      </details>
+      <details>
+        <summary>I am a student in India - is this affordable?</summary>
+        <p>Start with the free portfolio readiness check. It costs nothing and tells you whether paid feedback is even worth it yet. If you want more, the written report starts at $9.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<hr class="div"/>
+<section id="work" style="background:var(--bg2)">
+  <div style="padding:4.5rem 5vw 2.2rem" class="reveal">
+    <p class="s-label">Selected Works</p>
+    <h2 class="s-title">Portfolio <em>Highlights</em></h2>
+  </div>
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item reveal"><img src="https://cdnb.artstation.com/p/assets/images/images/087/491/755/large/amanpreet-bajwa-amanpreet-bajwa-castleruins-longshot-02.jpg" alt="Castle ruins environment, long shot showing ruined architecture blended into terrain and foliage" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Castle Ruins</span></div></div>
+    <div class="gallery-item reveal rd1"><img src="https://cdnb.artstation.com/p/assets/images/images/078/613/609/large/amanpreet-bajwa-tomb-03.jpg" alt="Tomb environment art scene showing stone architecture and set dressing" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Tomb Environment</span></div></div>
+    <div class="gallery-item reveal rd2"><img src="https://cdnb.artstation.com/p/assets/images/images/095/233/973/large/amanpreet-bajwa-mth-02.webp" alt="Mountain biome environment showing terrain and vegetation at scale" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Mountain Biome</span></div></div>
+    <div class="gallery-item reveal rd3"><img src="https://cdna.artstation.com/p/assets/images/images/096/665/928/large/amanpreet-bajwa-amanpreet-bajwa-m-toc-day-10.webp" alt="Overcast daytime environment scene showing soft lighting on foliage" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Overcast Scene</span></div></div>
+    <div class="gallery-item reveal"><img src="https://cdnb.artstation.com/p/assets/images/images/058/370/425/large/amanpreet-bajwa-ancient-one-11.jpg" alt="Ancient One, Unreal Engine 5 environment scene" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Ancient One - UE5</span></div></div>
+    <div class="gallery-item reveal rd1"><img src="https://cdnb.artstation.com/p/assets/images/images/015/530/359/large/amanpreet-bajwa-north-kingdom-02.jpg" alt="North Kingdom environment art scene" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">North Kingdom</span></div></div>
+    <div class="gallery-item reveal rd2"><img src="https://cdnb.artstation.com/p/assets/images/images/014/458/085/large/amanpreet-bajwa-feudal-japan-day.jpg" alt="Feudal Japan environment in daylight, showing architecture and foliage" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Feudal Japan - Day</span></div></div>
+    <div class="gallery-item reveal rd3"><img src="https://cdna.artstation.com/p/assets/images/images/014/458/076/large/amanpreet-bajwa-feudal-japan-night.jpg" alt="The same Feudal Japan environment at night, showing a lighting change" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Feudal Japan - Night</span></div></div>
+    <div class="gallery-item reveal"><img src="https://cdnb.artstation.com/p/assets/images/images/032/864/983/large/amanpreet-bajwa-bigbang-08-01.jpg" alt="Big Bang environment art scene" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Big Bang</span></div></div>
+    <div class="gallery-item reveal rd1"><img src="https://cdna.artstation.com/p/assets/images/images/054/587/670/large/amanpreet-bajwa-01.jpg" alt="Foliage study showing game-ready plant assets" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Foliage Study</span></div></div>
+    <div class="gallery-item reveal rd2"><img src="https://cdna.artstation.com/p/assets/images/images/042/006/548/large/amanpreet-bajwa-amanpreet-bajwa-1.jpg" alt="Game environment scene with terrain, foliage and lighting" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Environment Scene</span></div></div>
+    <div class="gallery-item reveal rd3"><img src="https://cdna.artstation.com/p/assets/images/images/021/109/986/large/amanpreet-bajwa-colorado-screen-10.jpg" alt="Colorado landscape environment showing a natural biome" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Colorado</span></div></div>
+    <div class="gallery-item reveal"><img src="https://cdna.artstation.com/p/assets/images/images/038/767/472/large/amanpreet-bajwa-fh4-h03.jpg" alt="Forza Horizon 4 biome work showing roadside vegetation" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Forza Horizon 4 - Biome</span></div></div>
+    <div class="gallery-item reveal rd1"><img src="https://cdna.artstation.com/p/assets/images/images/038/767/284/large/amanpreet-bajwa-fh4-tree.jpg" alt="Forza Horizon 4 tree asset made for the game" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Forza Horizon 4 - Tree</span></div></div>
+    <div class="gallery-item reveal rd2"><img src="https://cdnb.artstation.com/p/assets/images/images/021/109/741/large/amanpreet-bajwa-amanpreet-bajwa-environment-05.jpg" alt="Environment concept scene showing composition and mood" loading="lazy"/><div class="gallery-item-over"><span class="gallery-item-lbl">Environment Concept</span></div></div>
+  </div>
+  <div class="gallery-footer reveal">
+    <a href="https://www.artstation.com/bajwa" target="_blank" rel="noopener" class="btn-outline">See Full Portfolio on ArtStation</a>
+  </div>
+</section>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">X  Close</button>
+  <button class="lb-prev" id="lbPrev">&#8249;</button>
+  <img src="" alt="" id="lbImg"/>
+  <button class="lb-next" id="lbNext">&#8250;</button>
+</div>
+
+<!-- CLIENTS MARQUEE -->
+<div class="clients-section">
+  <div class="clients-header">
+    <div class="clients-title">Games and Studios &nbsp;·&nbsp; 10+ Years of AAA Production</div>
+    <div class="clients-subtitle">Click any title to watch the trailer</div>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="clientTrack">
+      <div class="client-card" data-yt="https://www.youtube.com/embed/QdBZExpgErs" data-title="Grand Theft Auto VI - Reveal Trailer"><span class="client-play">+</span><div class="client-game">Grand Theft Auto VI</div><div class="client-studio">Rockstar Games</div></div>
+      <div class="client-card" data-yt="https://www.youtube.com/embed/XYmhjpNaFBY" data-title="Off the Grid - Gameplay Trailer"><span class="client-play">+</span><div class="client-game">Off the Grid</div><div class="client-studio">Gunzilla Games</div></div>
+      <div class="client-card" data-yt="https://www.youtube.com/embed/3QJIkpV9Qgs" data-title="Mafia: Definitive Edition - Trailer"><span class="client-play">+</span><div class="client-game">Mafia: Definitive Edition</div><div class="client-studio">Hangar 13 / 2K Games</div></div>
+      <div class="client-card" data-yt="https://www.youtube.com/embed/AJNNwQn4KyU" data-title="Forza Horizon 4 - Official Trailer"><span class="client-play">+</span><div class="client-game">Forza Horizon 4</div><div class="client-studio">Dhruva Interactive</div></div>
+      <div class="client-card" data-yt="https://www.youtube.com/embed/4MnoB2BUHKM" data-title="Overkill's The Walking Dead - Trailer"><span class="client-play">+</span><div class="client-game">The Walking Dead</div><div class="client-studio">Dhruva Interactive</div></div>
+      <div class="client-card" data-yt="https://www.youtube.com/embed/2nYRDSMBiro" data-title="Hunting Simulator 2 - Trailer"><span class="client-play">+</span><div class="client-game">Hunting Simulator 2</div><div class="client-studio">Dhruva Interactive</div></div>
+      <div class="client-card" data-yt="https://www.youtube.com/embed/mMGMIBpseaA" data-title="Godfall - Official Reveal"><span class="client-play">+</span><div class="client-game">Godfall</div><div class="client-studio">Dekogon</div></div>
+      <div class="client-card" data-yt="https://www.youtube.com/embed/qC5KtatMcUw" data-title="Unreal Engine 5 - Official Demo"><span class="client-play">+</span><div class="client-game">UE5 Epic Games Demo</div><div class="client-studio">Epic Games Showcase</div></div>
+      <div class="client-card" data-yt="" data-title="Crossfire Co-Op"><span class="client-play">+</span><div class="client-game">Crossfire Co-Op</div><div class="client-studio">Dhruva Interactive</div></div>
+      <div class="client-card" data-yt="" data-title="Romero Games Project (NDA)"><span class="client-play">+</span><div class="client-game">Romero Games (NDA)</div><div class="client-studio">Romero Games Ltd.</div></div>
+      <div class="client-card" data-yt="" data-title="NVIDIA Real-Time Vegetation Simulator"><span class="client-play">+</span><div class="client-game">NVIDIA Simulator</div><div class="client-studio">NVIDIA</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Trailer Popup -->
+<div class="trailer-overlay" id="trailerOverlay">
+  <div class="trailer-box">
+    <button class="trailer-close" id="trailerClose">X  Close</button>
+    <iframe id="trailerFrame" src="" allowfullscreen allow="autoplay"></iframe>
+    <div class="trailer-title" id="trailerTitle"></div>
+  </div>
+</div>
+
+<!-- ABOUT - 4 columns -->
+<hr class="div"/>
+<section id="about">
+  <div class="about-4col">
+
+    <!-- Block 1: Big stacked title, nudged right -->
+    <div class="about-block-title reveal">
+      <div class="about-big-title">
+        <span class="w-white">Senior</span>
+        <span class="w-white">Artist.</span>
+        <span class="w-white">Mentor.</span>
+        <span class="w-gold">Storyteller.</span>
+        <span class="w-white">Chronic</span>
+        <span class="w-white">Learner.</span>
+        <span class="w-white">Supporter.</span>
+      </div>
+    </div>
+
+    <!-- Block 2: Bio text, nudged left -->
+    <div class="about-block-bio reveal rd1">
+      <p class="s-label">About</p>
+      <div class="about-body">
+        <p>I am a <strong>Senior Biome and Foliage Artist</strong> with 10+ years building photorealistic environments for the industry's biggest titles. Rockstar Games on <strong>GTA 6</strong>, Gunzilla's <strong>Off the Grid</strong>, Hangar 13's <strong>Mafia</strong>, and <strong>Forza Horizon 4</strong>.</p>
+        <p>I specialise in making environments feel alive. Foliage systems, biome pipelines, vegetation at scale. I also build the tools and scripts that make production sustainable.</p>
+        <p>I run <strong>Future/Past Academy</strong>, have spoken at BCon 2023 to 2025 as keynote, and lectured at university level on foliage art and game pipelines.</p>
+        <p>I also write poetry, collect coins from 50+ countries, and cook anything I can get my hands on.</p>
+      </div>
+      <div class="about-badges">
+        <a href="https://www.linkedin.com/in/7bajwa/" target="_blank" class="about-badge-pill">LinkedIn</a>
+        <a href="https://github.com/7bajwa" target="_blank" class="about-badge-pill">GitHub</a>
+        <a href="https://www.youtube.com/@7bajwa" target="_blank" class="about-badge-pill">YouTube</a>
+      </div>
+      <p class="evidence"><strong>As seen at</strong><br/>BCon keynote 2023 · BCon keynote 2024 · BCon keynote 2025 · University guest lectures on foliage art and game pipelines · <a href="https://topmate.io/fpa" target="_blank" rel="noopener">Top 0.1% on Topmate</a></p>
+    </div>
+
+    <!-- Block 3: Render slideshow, nudged left -->
+    <div class="about-img-block reveal rd2" id="aboutImgBlock">
+      <div class="about-img-slide active" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/087/491/755/large/amanpreet-bajwa-amanpreet-bajwa-castleruins-longshot-02.jpg')"></div>
+      <div class="about-img-slide" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/058/370/425/large/amanpreet-bajwa-ancient-one-11.jpg')"></div>
+      <div class="about-img-slide" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/014/458/085/large/amanpreet-bajwa-feudal-japan-day.jpg')"></div>
+      <div class="about-img-slide" style="background-image:url('https://cdna.artstation.com/p/assets/images/images/096/665/928/large/amanpreet-bajwa-amanpreet-bajwa-m-toc-day-10.webp')"></div>
+      <div class="about-img-slide" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/015/530/359/large/amanpreet-bajwa-north-kingdom-02.jpg')"></div>
+    </div>
+
+    <!-- Block 4: Skills -->
+    <div class="about-block-skills reveal rd3">
+      <p class="s-label">Skills</p>
+      <div class="skill-group">
+        <div class="skill-group-title">3D Art</div>
+        <div class="skill-chip-row"><span class="skill-chip">Blender</span><span class="skill-chip">SpeedTree</span><span class="skill-chip">PlantFactory</span><span class="skill-chip">ZBrush</span><span class="skill-chip">3DS Max</span><span class="skill-chip">Maya</span></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Engine and Real-Time</div>
+        <div class="skill-chip-row"><span class="skill-chip">Unreal Engine 5</span><span class="skill-chip">Nanite</span><span class="skill-chip">Lumen</span><span class="skill-chip">PCG Framework</span><span class="skill-chip">ISM / HISM</span></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Texturing and Shaders</div>
+        <div class="skill-chip-row"><span class="skill-chip">Substance Painter</span><span class="skill-chip">Substance Designer</span><span class="skill-chip">PBR</span><span class="skill-chip">Trim Sheets</span><span class="skill-chip">WPO</span><span class="skill-chip">SSS</span></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Terrain and Procedural</div>
+        <div class="skill-chip-row"><span class="skill-chip">World Machine</span><span class="skill-chip">Gaea</span><span class="skill-chip">Houdini</span><span class="skill-chip">Geometry Nodes</span><span class="skill-chip">Photogrammetry</span></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Pipeline and Scripting</div>
+        <div class="skill-chip-row"><span class="skill-chip">Python</span><span class="skill-chip">C++</span><span class="skill-chip">Blueprint</span><span class="skill-chip">LOD Strategy</span><span class="skill-chip">Optimisation</span></div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -680,6 +842,9 @@ const revObs = new IntersectionObserver(entries => {
   entries.forEach((e,i) => { if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('visible'),i*55); revObs.unobserve(e.target); } });
 },{threshold:.07});
 revEls.forEach(el=>revObs.observe(el));
+
+// Marquees: markup holds one set; clone it so the -50% scroll loops seamlessly
+['clientTrack','tTrack'].forEach(id=>{ const t=document.getElementById(id); [...t.children].forEach(c=>{ const d=c.cloneNode(true); d.setAttribute('aria-hidden','true'); t.appendChild(d); }); });
 
 // Trailer popup
 const tOverlay = document.getElementById('trailerOverlay');
