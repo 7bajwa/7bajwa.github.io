@@ -312,6 +312,13 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
 .faq summary::after{content:'+';color:var(--gold)}
 .faq details[open] summary::after{content:'-'}
 .faq details p{font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--text-dim);line-height:1.9;padding-bottom:1.2rem}
+/* Desktop: FAQ left, testimonial strip in the space on the right; narrower screens stack them */
+@media(min-width:901px){
+  /* minmax(0,…) stops the max-content track from widening its column */
+  .tf-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4rem;align-items:start}
+  .tf-grid .t-col{grid-column:2;grid-row:1}
+  .tf-grid .faq{grid-column:1;grid-row:1;margin-top:0}
+}
 
 /* RESPONSIVE */
 @media(max-width:1200px){
@@ -567,7 +574,8 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
 <!-- TESTIMONIALS / FAQ -->
 <hr class="div"/>
 <section id="testimonials" class="mentor-section">
-  <div class="section-inner">
+  <div class="section-inner tf-grid">
+    <div class="t-col">
     <p class="s-label reveal" style="margin-bottom:1.4rem">What students and clients say</p>
     <!-- TODO: add a photo and a role line (e.g. "Student environment artist, India") per card, and one before/after portfolio screenshot -->
 
@@ -585,6 +593,7 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"There are some aspects of 3D I overlooked as an artist, and this call with Amanpreet helped me recognise how crucial they are to a strong portfolio."</p><div class="tcard-footer"><div class="tcard-author">Ashley Obote</div><div class="tcard-date">May 2025</div></div></div>
         <div class="tcard"><div class="tcard-stars">★ ★ ★ ★ ★</div><p class="tcard-quote">"Very practical and insightful feedback for my resume and portfolio. The session was very informative and did not feel stiff or formal."</p><div class="tcard-footer"><div class="tcard-author">Enes Besinci</div><div class="tcard-date">October 2023</div></div></div>
       </div>
+    </div>
     </div>
 
     <div class="faq reveal" id="faq">
