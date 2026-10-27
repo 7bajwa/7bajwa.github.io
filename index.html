@@ -863,7 +863,7 @@ document.querySelectorAll('form[data-formsubmit]').forEach(f => f.addEventListen
   const btn = f.querySelector('button[type=submit]'), st = f.querySelector('.form-status');
   btn.disabled = true; st.textContent = 'Sending...';
   try {
-    const res = await fetch('https://formsubmit.co/ajax/futurepastacademy@gmail.com', {
+    const res = await fetch('https://formsubmit.co/ajax/e9e762bd3ac7c5a7b9f622ababc75440', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       // subject carries the reason so the inbox can be sorted at a glance
@@ -873,7 +873,7 @@ document.querySelectorAll('form[data-formsubmit]').forEach(f => f.addEventListen
     if (!res.ok || String(data.success) !== 'true') throw new Error(data.message);
     f.reset(); st.textContent = 'Sent. I will reply to your email soon.';
   } catch (err) {
-    st.textContent = 'Could not send. Please email futurepastacademy@gmail.com directly.';
+    st.textContent = 'Could not send. Please try again in a minute.';
   }
   btn.disabled = false;
 }));
