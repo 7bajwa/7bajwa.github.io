@@ -24,13 +24,15 @@
     {"@type":"Service","name":"Game Art Mentorship and Portfolio Review","serviceType":"Game environment art mentorship","provider":{"@id":"https://7bajwa.github.io/#academy"},"audience":{"@type":"Audience","audienceType":"Aspiring game environment artists"},"areaServed":"Worldwide","url":"https://7bajwa.github.io/#pricing",
      "offers":[
        {"@type":"Offer","name":"Portfolio readiness assessment","price":"0","priceCurrency":"USD"},
-       {"@type":"Offer","name":"Portfolio readiness report","priceSpecification":{"@type":"PriceSpecification","minPrice":"9","maxPrice":"19","priceCurrency":"USD"}},
-       {"@type":"Offer","name":"Expert portfolio review","priceSpecification":{"@type":"PriceSpecification","minPrice":"25","maxPrice":"30","priceCurrency":"USD"}},
+       {"@type":"Offer","name":"Portfolio readiness report","price":"9","priceCurrency":"USD"},
+       {"@type":"Offer","name":"Expert portfolio review","price":"29","priceCurrency":"USD"},
        {"@type":"Offer","name":"1-on-1 mentorship","priceSpecification":{"@type":"PriceSpecification","minPrice":"99","maxPrice":"599","priceCurrency":"USD"}}
      ]}
   ]
 }
 </script>
+<link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/18440150?s=64&amp;v=4"/>
+<link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/18440150?s=180&amp;v=4"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
@@ -55,8 +57,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
 .nav-links{display:flex;gap:2.2rem;list-style:none;align-items:center}
 .nav-links a{font-family:'Montserrat',sans-serif;font-size:.82rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--text-dim);text-decoration:none;transition:color .25s}
 .nav-links a:hover{color:var(--gold2)}
-.nav-cta{padding:.55rem 1.5rem;border:1px solid var(--border2);color:var(--gold);font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;transition:all .25s}
-.nav-cta:hover{background:var(--gold);color:#000}
 
 /* HERO */
 .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:9rem 6vw 12rem;overflow:hidden}
@@ -278,9 +278,14 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
 .proof-note a{color:var(--gold)}
 
 /* FREE CHECK */
-.free-check{border:1px solid var(--border2);background:var(--bg);padding:2.4rem;margin-bottom:4rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
-.free-check h3{font-family:'Libre Baskerville',serif;font-size:1.5rem;font-weight:400;color:var(--text-hi);margin-bottom:.6rem}
-.free-check p{font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--text-dim);line-height:1.85}
+.free-check{border:1px solid var(--border2);background:var(--bg);padding:1rem 1.6rem;margin-bottom:4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.free-check .btn-gold{white-space:nowrap;flex-shrink:0}
+#enquiry{scroll-margin-top:9rem}
+.cform button{width:100%;justify-content:center;border:none;cursor:pointer}
+.cform button:disabled{opacity:.6;cursor:wait}
+.form-status{font-family:'Montserrat',sans-serif;font-size:.8rem;color:var(--gold2);min-height:1.2em}
+.free-check p{flex:1;font-family:'Montserrat',sans-serif;font-size:.85rem;color:var(--text-dim);line-height:1.7}
+.free-check p strong{color:var(--text-hi);font-weight:600}
 
 /* PRICING */
 .pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
@@ -324,7 +329,6 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
 @media(max-width:1280px){
   nav{flex-wrap:wrap;padding:.6rem 4vw 0}
   .nav-name{font-size:1.05rem}
-  .nav-cta{min-height:44px;display:flex;align-items:center;padding:0 1rem}
   .nav-links{order:3;width:100%;gap:0;overflow-x:auto;justify-content:space-between;margin-top:.3rem}
   .nav-links a{display:flex;align-items:center;min-height:44px;padding:0 .55rem;font-size:.66rem}
   .hero{padding-top:10rem}
@@ -332,13 +336,13 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
 @media(max-width:768px){
   .nav-avatar{width:34px;height:34px}
   .nav-name{font-size:.9rem}
-  .nav-cta{padding:0 .7rem;font-size:.66rem}
   .hero{padding-top:8rem;padding-bottom:0}
   .hero-avatar,.hero-tags{display:none}
   .hero-stats-bar{position:relative;align-self:stretch;margin:3rem -6vw 0}
   .hero-ctas{flex-direction:column;width:100%}
   .hero-ctas a{justify-content:center;min-height:48px}
-  .free-check{grid-template-columns:1fr;padding:1.8rem}
+  .free-check{flex-direction:column;text-align:center;gap:1rem}
+  .free-check .btn-gold{white-space:normal}
   .pricing-grid{grid-template-columns:1fr}
   .tcard{width:300px;padding:1.8rem}
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
@@ -366,7 +370,6 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a class="nav-cta" href="https://topmate.io/fpa" target="_blank" rel="noopener">Book Session</a>
 </nav>
 
 <!-- HERO -->
@@ -400,8 +403,9 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
     <div class="hero-ctas">
       <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-gold">Book Mentorship</a>
       <a href="https://www.artstation.com/bajwa" target="_blank" rel="noopener" class="btn-cta">View Portfolio</a>
+      <a href="#enquiry" data-pick="Studio or Company looking to hire" class="btn-cta">Hire Me</a>
     </div>
-    <a href="#free-check" class="hero-free">Not ready to pay? Get a free portfolio readiness check</a>
+    <a href="#enquiry" data-pick="Free portfolio readiness check" class="hero-free">Not ready to pay? Get a free portfolio readiness check</a>
     <p class="hero-trust">First session covered by a money-back guarantee if it is not useful. Pay securely through Topmate.</p>
   </div>
 
@@ -428,7 +432,8 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
         </div>
         <div style="margin-top:1.8rem;display:flex;gap:.9rem;flex-wrap:wrap">
           <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-gold">Book a Session Now</a>
-          <a href="https://www.patreon.com/7bajwa" target="_blank" rel="noopener" class="btn-outline">Support on Patreon</a>
+          <a href="https://www.youtube.com/@7bajwa?sub_confirmation=1" target="_blank" rel="noopener" class="btn-outline">Support on YouTube</a>
+          <a href="#enquiry" data-pick="Joining the Art Talk session on YouTube" class="btn-outline">Feature on Art Talk</a>
         </div>
       </div>
       <div class="reveal rd1">
@@ -445,12 +450,8 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
     </div>
 
     <div class="free-check reveal" id="free-check">
-      <div>
-        <p class="s-label">Free · Stage 1</p>
-        <h3>Free portfolio readiness check</h3>
-        <p>Not sure if your portfolio is ready for studio applications? Send me your ArtStation or portfolio link. I will tell you honestly whether it is ready, and the first thing to fix if it is not. No payment, no card.</p>
-      </div>
-      <a href="mailto:amanpreetbajwa7@gmail.com?subject=Free%20portfolio%20readiness%20check&amp;body=Portfolio%20link%3A%20%0AWhat%20role%20I%20am%20aiming%20for%3A%20" class="btn-gold">Get a free portfolio readiness check</a>
+      <p><strong>Free portfolio readiness check:</strong> an honest answer on whether your portfolio is studio-ready. No card needed.</p>
+      <a href="#enquiry" data-pick="Free portfolio readiness check" class="btn-gold">Get a Free Check</a>
     </div>
   </div>
 </section>
@@ -476,7 +477,10 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
           <li>Photogrammetry integration</li>
           <li>Optimisation and LOD strategy</li>
         </ul>
-        <a href="mailto:amanpreetbajwa7@gmail.com" class="svc-link">Get a Quote</a>
+        <div style="display:flex;gap:1.4rem;align-items:center;flex-wrap:wrap">
+          <a href="#enquiry" data-pick="Company or indie dev needing freelance environment art" class="svc-link">Get a Quote</a>
+          <a href="#enquiry" data-pick="Studio or Company looking to hire" class="btn-outline">Hire Me</a>
+        </div>
       </div>
       <div class="svc-card reveal rd1">
         <div class="svc-num">02</div>
@@ -504,7 +508,7 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
           <li>Regular new content for supporters</li>
           <li>Community group Q and A calls</li>
         </ul>
-        <a href="https://www.patreon.com/7bajwa" target="_blank" rel="noopener" class="svc-link">Support on Patreon</a>
+        <a href="https://www.youtube.com/@7bajwa?sub_confirmation=1" target="_blank" rel="noopener" class="svc-link">Support on YouTube</a>
       </div>
     </div>
   </div>
@@ -526,21 +530,21 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
         <div class="price-amount">Free</div>
         <h3 class="price-name">Portfolio readiness assessment</h3>
         <p>A straight answer on whether your portfolio is ready for studio applications, and the first thing to fix.</p>
-        <a href="#free-check" class="btn-gold">Get the free check</a>
+        <a href="#enquiry" data-pick="Free portfolio readiness check" class="btn-gold">Get the free check</a>
       </div>
       <div class="price-card reveal rd1">
         <p class="price-stage">Stage 2</p>
-        <div class="price-amount">$9-19</div>
+        <div class="price-amount">$9</div>
         <h3 class="price-name">Readiness report</h3>
         <p>A written report on your portfolio: what is working, what is missing, and what studios will notice first.</p>
-        <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-outline">Book on Topmate</a>
+        <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-outline">Get Detailed Insights</a>
       </div>
       <div class="price-card reveal rd2">
         <p class="price-stage">Stage 3</p>
-        <div class="price-amount">$25-30</div>
+        <div class="price-amount">$29</div>
         <h3 class="price-name">Expert review</h3>
         <p>An in-depth portfolio review from an AAA environment artist, with an actionable roadmap of what to work on next.</p>
-        <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-outline">Book on Topmate</a>
+        <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-outline">Book a Session</a>
       </div>
       <div class="price-card reveal rd3">
         <p class="price-stage">Stage 4</p>
@@ -552,7 +556,8 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
     </div>
     <div class="pricing-notes reveal">
       <p>First session covered by a money-back guarantee if it is not useful. Pay securely through Topmate. Prices in USD.</p>
-      <p><strong>Who this is not for:</strong> studios looking to hire (see Freelance Environment Art above), or anyone looking for a job guarantee.</p>
+      <p><strong>Artists in India:</strong> we can offer a discount. Fill the <a href="#enquiry" data-pick="Discount request (artist in India)" style="color:var(--gold2)">form below</a> with the request and we will sort it out.</p>
+      <p><strong>Who this is not for:</strong> anyone looking for a job guarantee or shortcuts to success.</p>
     </div>
   </div>
 </section>
@@ -593,7 +598,7 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
       </details>
       <details>
         <summary>How much does it cost?</summary>
-        <p>The portfolio readiness assessment is free. A written readiness report is $9-19, an expert review is $25-30, and 1-on-1 mentorship runs from $99 to $599. See <a href="#pricing" style="color:var(--gold2)">pricing</a>. All payments go through Topmate.</p>
+        <p>The portfolio readiness assessment is free. A written readiness report is $9, an expert review is $29, and 1-on-1 mentorship runs from $99 to $599. See <a href="#pricing" style="color:var(--gold2)">pricing</a>. All payments go through Topmate.</p>
       </details>
       <details>
         <summary>Do you guarantee a job?</summary>
@@ -601,7 +606,7 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
       </details>
       <details>
         <summary>I am a student in India - is this affordable?</summary>
-        <p>Start with the free portfolio readiness check. It costs nothing and tells you whether paid feedback is even worth it yet. If you want more, the written report starts at $9.</p>
+        <p>Yes. Artists in India: we can offer a discount. Fill the <a href="#enquiry" data-pick="Discount request (artist in India)" style="color:var(--gold2)">form below</a> with the request and we will sort it out. You can also start with the free portfolio readiness check, which costs nothing.</p>
       </details>
     </div>
   </div>
@@ -725,23 +730,23 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
       <p class="s-label">Skills</p>
       <div class="skill-group">
         <div class="skill-group-title">3D Art</div>
-        <div class="skill-chip-row"><span class="skill-chip">Blender</span><span class="skill-chip">SpeedTree</span><span class="skill-chip">PlantFactory</span><span class="skill-chip">ZBrush</span><span class="skill-chip">3DS Max</span><span class="skill-chip">Maya</span></div>
+        <div class="skill-chip-row"><span class="skill-chip">Blender</span><span class="skill-chip">SpeedTree</span><span class="skill-chip">PlantFactory</span><span class="skill-chip">ZBrush</span><span class="skill-chip">3DS Max</span><span class="skill-chip">Maya</span><span class="skill-chip">Optimisation</span><span class="skill-chip">Low Poly</span></div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Engine and Real-Time</div>
-        <div class="skill-chip-row"><span class="skill-chip">Unreal Engine 5</span><span class="skill-chip">Nanite</span><span class="skill-chip">Lumen</span><span class="skill-chip">PCG Framework</span><span class="skill-chip">ISM / HISM</span></div>
+        <div class="skill-chip-row"><span class="skill-chip">Unreal Engine 5</span><span class="skill-chip">Nanite</span><span class="skill-chip">Lumen</span><span class="skill-chip">PCG Framework</span><span class="skill-chip">Nanite Foliage</span><span class="skill-chip">USD</span><span class="skill-chip">Nanite Assembly</span></div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Texturing and Shaders</div>
-        <div class="skill-chip-row"><span class="skill-chip">Substance Painter</span><span class="skill-chip">Substance Designer</span><span class="skill-chip">PBR</span><span class="skill-chip">Trim Sheets</span><span class="skill-chip">WPO</span><span class="skill-chip">SSS</span></div>
+        <div class="skill-chip-row"><span class="skill-chip">Substance Painter</span><span class="skill-chip">Substance Designer</span><span class="skill-chip">PBR</span><span class="skill-chip">Trim Sheets</span><span class="skill-chip">Texel Density</span><span class="skill-chip">Blend Materials</span><span class="skill-chip">Vertex Blend</span></div>
       </div>
       <div class="skill-group">
-        <div class="skill-group-title">Terrain and Procedural</div>
-        <div class="skill-chip-row"><span class="skill-chip">World Machine</span><span class="skill-chip">Gaea</span><span class="skill-chip">Houdini</span><span class="skill-chip">Geometry Nodes</span><span class="skill-chip">Photogrammetry</span></div>
+        <div class="skill-group-title">Landscape and Scanning</div>
+        <div class="skill-chip-row"><span class="skill-chip">World Machine</span><span class="skill-chip">Gaea</span><span class="skill-chip">Houdini</span><span class="skill-chip">Geometry Nodes</span><span class="skill-chip">Photogrammetry</span><span class="skill-chip">Photometric Stereo</span></div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Pipeline and Scripting</div>
-        <div class="skill-chip-row"><span class="skill-chip">Python</span><span class="skill-chip">C++</span><span class="skill-chip">Blueprint</span><span class="skill-chip">LOD Strategy</span><span class="skill-chip">Optimisation</span></div>
+        <div class="skill-chip-row"><span class="skill-chip">Python</span><span class="skill-chip">Blueprint</span><span class="skill-chip">AI</span><span class="skill-chip">Pipeline Tools</span><span class="skill-chip">Blender Addons</span><span class="skill-chip">Automating Boring Tasks</span></div>
       </div>
     </div>
 
@@ -784,23 +789,29 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
           <div><div class="cmethod-title">YouTube</div><div class="cmethod-sub">youtube.com/@7bajwa - Tutorials and talks</div></div>
         </a>
       </div>
-      <div class="cform reveal rd1">
+      <form class="cform reveal rd1" id="enquiry" data-formsubmit>
         <p class="cform-title">Quick Enquiry</p>
-        <div><label>Your Name</label><input type="text" placeholder="Jane Smith"/></div>
-        <div><label>Email Address</label><input type="email" placeholder="you@studio.com"/></div>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+        <div><label for="cf-name">Your Name</label><input id="cf-name" name="name" type="text" placeholder="Jane Smith" required/></div>
+        <div><label for="cf-email">Email Address</label><input id="cf-email" name="email" type="email" placeholder="you@studio.com" required/></div>
         <div>
-          <label>I am reaching out as a</label>
-          <select>
+          <label for="cf-type">I am reaching out as a</label>
+          <select id="cf-type" name="reaching_out_as" required>
             <option value="">Select one</option>
-            <option>Studio or Company looking to hire</option>
+            <option>Free portfolio readiness check</option>
             <option>Student seeking mentorship</option>
-            <option>Indie dev needing freelance environment art</option>
+            <option>Joining the Art Talk session on YouTube</option>
+            <option>Discount request (artist in India)</option>
+            <option>Studio or Company looking to hire</option>
+            <option>Company or indie dev needing freelance environment art</option>
             <option>Other</option>
           </select>
         </div>
-        <div><label>Message</label><textarea placeholder="Tell me about your project or what you are looking for..."></textarea></div>
-        <a href="mailto:amanpreetbajwa7@gmail.com" class="btn-gold" style="width:100%;justify-content:center;margin-top:.3rem">Send Message</a>
-      </div>
+        <div><label for="cf-link">Portfolio Link (optional)</label><input id="cf-link" name="portfolio" type="url" placeholder="https://www.artstation.com/yourname"/></div>
+        <div><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" placeholder="Tell me about your project or what you are looking for..." required></textarea></div>
+        <button type="submit" class="btn-gold" style="margin-top:.3rem">Send Message</button>
+        <p class="form-status" role="status"></p>
+      </form>
     </div>
   </div>
 </section>
@@ -845,6 +856,36 @@ revEls.forEach(el=>revObs.observe(el));
 
 // Marquees: markup holds one set; clone it so the -50% scroll loops seamlessly
 ['clientTrack','tTrack'].forEach(id=>{ const t=document.getElementById(id); [...t.children].forEach(c=>{ const d=c.cloneNode(true); d.setAttribute('aria-hidden','true'); t.appendChild(d); }); });
+
+// Forms: post to FormSubmit's AJAX endpoint so visitors stay on the page and the email lands in the inbox
+document.querySelectorAll('form[data-formsubmit]').forEach(f => f.addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = f.querySelector('button[type=submit]'), st = f.querySelector('.form-status');
+  btn.disabled = true; st.textContent = 'Sending...';
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/futurepastacademy@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      // subject carries the reason so the inbox can be sorted at a glance
+      body: JSON.stringify({ ...Object.fromEntries(new FormData(f)), _subject: 'Website: ' + (f.reaching_out_as?.value || 'Enquiry'), _template: 'table' })
+    });
+    const data = await res.json();
+    if (!res.ok || String(data.success) !== 'true') throw new Error(data.message);
+    f.reset(); st.textContent = 'Sent. I will reply to your email soon.';
+  } catch (err) {
+    st.textContent = 'Could not send. Please email futurepastacademy@gmail.com directly.';
+  }
+  btn.disabled = false;
+}));
+
+// Links to the enquiry form: preselect the reason, scroll to the form, put the cursor in the name field
+document.querySelectorAll('a[href="#enquiry"]').forEach(a => a.addEventListener('click', e => {
+  e.preventDefault();
+  if (a.dataset.pick) document.getElementById('cf-type').value = a.dataset.pick;
+  // focus only after the scroll ends: focusing mid-scroll cancels the smooth scroll in Chrome
+  addEventListener('scrollend', () => document.getElementById('cf-name').focus({ preventScroll: true }), { once: true });
+  document.getElementById('enquiry').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}));
 
 // Trailer popup
 const tOverlay = document.getElementById('trailerOverlay');
