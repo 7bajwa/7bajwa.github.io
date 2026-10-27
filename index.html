@@ -316,8 +316,10 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
 @media(min-width:901px){
   /* minmax(0,…) stops the max-content track from widening its column */
   .tf-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4rem;align-items:start}
-  .tf-grid .t-col{grid-column:2;grid-row:1}
-  .tf-grid .faq{grid-column:1;grid-row:1;margin-top:0}
+  /* shared rows: headings in row 1, cards level with the first question in row 2 */
+  .tf-grid .t-col,.tf-grid .faq{grid-row:1/3;display:grid;grid-template-rows:subgrid;margin-top:0}
+  .tf-grid .t-col{grid-column:2}
+  .tf-grid .faq{grid-column:1}
 }
 
 /* RESPONSIVE */
@@ -398,16 +400,15 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
     <h1 class="hero-title">Amanpreet Bajwa</h1>
     <p class="hero-audience">For aspiring environment artists who want a professional Artist to point out what their portfolio is missing, and a clear roadmap of what to work on next. No sugar-coating, no gatekeeping.</p>
     <p class="hero-roles">Portfolio Review and Career Roadmap <span class="sep">|</span> Environment and Foliage Art <span class="sep">|</span> UE5, Blender, Speedtree and PlantFactory</p>
-    <p class="hero-sub">10+ years AAA at Rockstar Games <span class="sep">·</span> Rockstar Games <span class="sep">·</span> Gunzilla <span class="sep">·</span> Hangar 13 <span class="sep">·</span> Romero Games <span class="sep">·</span> Dhruva</p>
+    <p class="hero-sub">10+ years in AAA <span class="sep">·</span> Rockstar Games <span class="sep">·</span> Gunzilla <span class="sep">·</span> Hangar 13 <span class="sep">·</span> Romero Games <span class="sep">·</span> Dhruva<span class="sep">·</span> Dekogon </p>
     <div class="hero-tags">
-      <span class="hero-tag">GTA 6</span>
+      <span class="hero-tag">GTA VI</span>
       <span class="hero-tag">Off the Grid</span>
       <span class="hero-tag">Mafia</span>
-      <span class="hero-tag">Forza Horizon 4</span>
+      <span class="hero-tag">Forza Horizon</span>
       <span class="hero-tag">Godfall</span>
       <span class="hero-tag">Epic UE5 Demo</span>
       <span class="hero-tag">Walking Dead</span>
-      <span class="hero-tag">Hunting Simulator</span>
     </div>
     <div class="hero-ctas">
       <a href="https://topmate.io/fpa" target="_blank" rel="noopener" class="btn-gold">Book Mentorship</a>
@@ -576,7 +577,10 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
 <section id="testimonials" class="mentor-section">
   <div class="section-inner tf-grid">
     <div class="t-col">
-    <p class="s-label reveal" style="margin-bottom:1.4rem">What students and clients say</p>
+    <div class="reveal">
+    <p class="s-label">Testimonials</p>
+    <h2 class="s-title">What students & mentees <em>say.</em></h2>
+    </div>
     <!-- TODO: add a photo and a role line (e.g. "Student environment artist, India") per card, and one before/after portfolio screenshot -->
 
     <div class="t-marquee-wrap">
@@ -597,8 +601,11 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
     </div>
 
     <div class="faq reveal" id="faq">
+      <div>
       <p class="s-label">FAQ</p>
       <h2 class="s-title">Questions artists <em>ask first.</em></h2>
+      </div>
+      <div>
       <details>
         <summary>Why not just watch YouTube tutorials?</summary>
         <p>Tutorials teach a technique. They cannot look at your portfolio. I make tutorials too, on YouTube and Topmate, and they are great once you know what to learn. Mentorship tells you what your portfolio is missing and in what order to fix it. As Vikram put it after his session: "Unlike YouTube tutorials it provides you with a structured path to learn."</p>
@@ -619,6 +626,7 @@ a.hstat:hover,a.mstat:hover{background:var(--bg3)}
         <summary>I am a student in India - is this affordable?</summary>
         <p>Yes. Artists in India: we can offer a discount. Fill the <a href="#enquiry" data-pick="Discount request (artist in India)" style="color:var(--gold2)">form below</a> with the request and we will sort it out. You can also start with the free portfolio readiness check, which costs nothing.</p>
       </details>
+      </div>
     </div>
   </div>
 </section>
